@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>cz.lhhd</groupId>
 	<artifactId>midas</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>midas</name>
 	<description>Project for marketing</description>
 
