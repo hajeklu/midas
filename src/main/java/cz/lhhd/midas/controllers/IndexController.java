@@ -6,6 +6,8 @@ import cz.lhhd.midas.repository.FeedRepository;
 import cz.lhhd.midas.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,6 +27,11 @@ public class IndexController {
         return "Hello World.";
     }
 
+
+    @PostMapping("/test")
+    public Feed test(@RequestBody Feed u){
+        return u;
+    }
 
     @RequestMapping("/generate")
     public String genrate(){

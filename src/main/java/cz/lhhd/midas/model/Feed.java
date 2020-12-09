@@ -21,6 +21,8 @@ public class Feed {
 
     private String href;
 
+    private String typ;
+
     @ManyToOne
     private User user;
 
@@ -78,5 +80,13 @@ public class Feed {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public String getTyp() {
+        return typ;
+    }
+
+    public void setTyp(String typ) {
+        this.typ = typ;
     }
 }
