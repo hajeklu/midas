@@ -24,7 +24,7 @@ public class Feed {
     private String typ;
 
     @ManyToOne
-    private User user;
+    private AnixaUser user;
 
     public int getId() {
         return id;
@@ -74,11 +74,11 @@ public class Feed {
         this.href = href;
     }
 
-    public User getUser() {
+    public AnixaUser getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(AnixaUser user) {
         this.user = user;
     }
 

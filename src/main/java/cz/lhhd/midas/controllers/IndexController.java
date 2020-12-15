@@ -1,11 +1,10 @@
 package cz.lhhd.midas.controllers;
 
 import cz.lhhd.midas.model.Feed;
-import cz.lhhd.midas.model.User;
+import cz.lhhd.midas.model.AnixaUser;
 import cz.lhhd.midas.repository.FeedRepository;
 import cz.lhhd.midas.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,7 +35,7 @@ public class IndexController {
     @RequestMapping("/generate")
     public String genrate(){
 
-        User u = new User();
+        AnixaUser u = new AnixaUser();
         u.setPassword("59529d4b40658898b9f5a4b60668285480f03a242ae73f1685ec62c4b2feb0a8");
         u.setNick("Nick");
         u.setEmail("first.last@email.eu");
@@ -44,7 +43,7 @@ public class IndexController {
         userRepository.save(u);
 
 
-        User u1 = new User();
+        AnixaUser u1 = new AnixaUser();
         u1.setPassword("59529d4b40658898b9f5a4b60668285480f03a242ae73f1685ec62c4b2feb0a8");
         u1.setNick("Nick1");
         u1.setEmail("first1.last1@email.eu");
@@ -52,7 +51,7 @@ public class IndexController {
         userRepository.save(u1);
 
 
-        User u2= new User();
+        AnixaUser u2= new AnixaUser();
         u2.setPassword("59529d4b40658898b9f5a4b60668285480f03a242ae73f1685ec62c4b2feb0a8");
         u2.setNick("Nick2");
         u2.setEmail("first2.last2@email.eu");
@@ -61,7 +60,7 @@ public class IndexController {
 
 
 
-        User u3 = new User();
+        AnixaUser u3 = new AnixaUser();
         u3.setPassword("59529d4b40658898b9f5a4b60668285480f03a242ae73f1685ec62c4b2feb0a8");
         u3.setNick("Nick3");
         u3.setEmail("first3.last3@email.eu");

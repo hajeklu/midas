@@ -1,6 +1,6 @@
 package cz.lhhd.midas.controllers;
 
-import cz.lhhd.midas.model.User;
+import cz.lhhd.midas.model.AnixaUser;
 import cz.lhhd.midas.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +17,7 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("/api/user")
-    public List<User> getAllUsers(){
+    public List<AnixaUser> getAllUsers(){
         return userRepository.findAll();
     }
 

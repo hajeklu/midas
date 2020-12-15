@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class User {
+public class AnixaUser {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -18,10 +18,8 @@ public class User {
 
     private String password;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "user")
-    private List<Feed> feeds;
-
+    @ManyToMany
+    private List<Contest> contests;
 
     public int getId() {
         return id;
@@ -55,11 +53,12 @@ public class User {
         this.password = password;
     }
 
-    public List<Feed> getFeeds() {
-        return feeds;
+
+    public List<Contest> getContests() {
+        return contests;
     }
 
-    public void setFeeds(List<Feed> feeds) {
-        this.feeds = feeds;
+    public void setContests(List<Contest> contests) {
+        this.contests = contests;
     }
 }
