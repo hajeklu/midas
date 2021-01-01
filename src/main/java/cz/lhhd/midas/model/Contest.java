@@ -13,10 +13,13 @@ public class Contest {
 
     private String picturePatch;
 
+    @Lob
     private String title;
 
+    @Lob
     private String text;
 
+    @Lob
     private String link;
 
     private LocalDateTime creation;
